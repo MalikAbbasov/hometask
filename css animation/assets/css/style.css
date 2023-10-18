@@ -1,0 +1,54 @@
+body{
+display: flex;
+height: 30vh;
+}
+.box{
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 500ms;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.box2{
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 500ms;
+    position: relative;
+    animation-duration: 3s;
+}
+.box2 .hover{
+    position: absolute;
+    display: none;
+    bottom: -180px;
+}
+.box2 .hover li{
+    background-color: black;
+    padding: 20px;
+    width: 100px;
+    color: wheat;
+}
+.box2:hover{
+
+    transition: 1.5s;
+}
+.box2:hover .hover{
+    display: block;
+
+}
+.hover li:hover{
+    background-color: orange;
+    transition: 400ms;
+}
